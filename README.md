@@ -1,5 +1,7 @@
 # React Navigation Contactlist
 
+> Oplossing bevat 4 branches: 0-start , 1-tabs , 2-userdetail, 3-modal. Telkens met tussentijdse oplossingen
+
 Deze applicatie bevat 4 screens:
 
 - Feed
