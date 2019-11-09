@@ -51,10 +51,10 @@ Maak hierbij gebruik van:
 https://reactnavigation.org/docs/en/getting-started.html#start-from-a-template
 
 ```
-expo install react-navigation react-native-gesture-handler react-native-reanimated react-native-screens
+expo install react-navigation react-navigation-tabs react-native-gesture-handler react-native-reanimated react-native-screens
 ```
 
-Controleer dat react-navigation, react-native-gesture-handler, react-native-reanimated zijn toegevoegd in je `package.json`
+Controleer dat react-navigation, react-navigation-tabs, react-native-gesture-handler, react-native-reanimated zijn toegevoegd in je `package.json`
 
 ## Resultaat
 
