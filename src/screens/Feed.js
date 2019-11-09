@@ -4,9 +4,12 @@ import { ListItem } from "react-native-elements";
 import { users } from "../config/data";
 
 class Feed extends Component {
-  // add user as parameter of this function
-  onLearnMore = () => {
-    console.log("onLearnMore");
+  static navigationOptions = {
+    title: "Feed"
+  };
+
+  onLearnMore = user => {
+    this.props.navigation.navigate("Details", { user: user });
   };
 
   render() {
@@ -18,7 +21,7 @@ class Feed extends Component {
             leftAvatar={{ source: { uri: user.picture.thumbnail } }}
             title={`${user.name.first.toUpperCase()} ${user.name.last.toUpperCase()}`}
             subtitle={user.email}
-            onPress={() => this.onLearnMore()}
+            onPress={() => this.onLearnMore(user)}
             bottomDivider
             chevron
           />
