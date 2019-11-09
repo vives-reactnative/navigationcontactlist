@@ -5,7 +5,7 @@ import { ListItem } from "react-native-elements";
 class Settings extends Component {
   render() {
     return (
-      <ScrollView style={{ backgroundColor: "#F2F2F2" }}>
+      <View style={{ backgroundColor: "#F2F2F2", marginTop: 50 }}>
         <ListItem title="Notifications" bottomDivider chevron />
         <ListItem title="Profile" bottomDivider chevron />
         <ListItem title="Password" bottomDivider chevron />
@@ -14,7 +14,7 @@ class Settings extends Component {
           rightIcon={{ name: "cancel" }}
           style={{ marginTop: 30 }}
         />
-      </ScrollView>
+      </View>
     );
   }
 }
