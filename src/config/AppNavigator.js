@@ -5,6 +5,7 @@ import { createStackNavigator } from "react-navigation-stack";
 
 import Feed from "../screens/Feed";
 import Me from "../screens/Me";
+import Settings from "../screens/Settings";
 import UserDetail from "../screens/UserDetail";
 import TabBarIcon from "../components/TabBarIcon";
 
@@ -17,7 +18,7 @@ const FeedStack = createStackNavigator({
   }
 });
 
-export const TabNavigator = createBottomTabNavigator({
+const TabNavigator = createBottomTabNavigator({
   Feed: {
     screen: FeedStack,
     navigationOptions: {
@@ -43,3 +44,18 @@ export const TabNavigator = createBottomTabNavigator({
     }
   }
 });
+
+export const RootNavigator = createStackNavigator(
+  {
+    Tabs: {
+      screen: TabNavigator
+    },
+    Settings: {
+      screen: Settings
+    }
+  },
+  {
+    mode: "modal",
+    headerMode: "none"
+  }
+);

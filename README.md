@@ -51,14 +51,14 @@ Maak hierbij gebruik van:
 https://reactnavigation.org/docs/en/getting-started.html#start-from-a-template
 
 ```
-expo install react-navigation react-navigation-tabs react-native-gesture-handler react-native-reanimated react-native-screens
+expo install react-navigation react-navigation-tabs react-navigation-stack react-native-gesture-handler react-native-reanimated react-native-screens
 ```
 
-Controleer dat react-navigation, react-navigation-tabs, react-native-gesture-handler, react-native-reanimated zijn toegevoegd in je `package.json`
+Controleer dat alle libraries zijn toegevoegd in je `package.json`
 
 ## Resultaat
 
-**Voeg onder `/config` een `router.js` bestand toe met hierin alle react navigation configuratie**
+**Voeg onder `/config` een `AppNavigator.js` bestand toe met hierin alle react navigation configuratie**
 
 Zodat onderstaande verwezenlijkt wordt:
 

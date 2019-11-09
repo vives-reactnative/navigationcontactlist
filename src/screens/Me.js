@@ -8,7 +8,7 @@ class Me extends Component {
   static defaultProps = { ...me };
 
   handleSettingsPress = () => {
-    console.log("handleSettingsPress");
+    this.props.navigation.navigate("Settings");
   };
 
   render() {
