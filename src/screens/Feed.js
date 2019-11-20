@@ -5,7 +5,8 @@ import { users } from "../config/data";
 
 class Feed extends Component {
   static navigationOptions = {
-    title: "Feed"
+    title: "Feed",
+    headerTitleStyle: { flex: 1 }
   };
 
   onLearnMore = user => {

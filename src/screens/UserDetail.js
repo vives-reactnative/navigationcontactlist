@@ -9,13 +9,20 @@ class UserDetail extends Component {
       .getParam("user")
       .name.first.toUpperCase()} ${navigation
       .getParam("user")
-      .name.last.toUpperCase()}`
+      .name.last.toUpperCase()}`,
+    headerTitleStyle: { flex: 1 }
   });
 
   render() {
-    const { picture, name, email, phone, login, dob, location } = {
-      ...this.props.navigation.getParam("user")
-    };
+    const {
+      picture,
+      name,
+      email,
+      phone,
+      login,
+      dob,
+      location
+    } = this.props.navigation.getParam("user");
 
     const { title, subtitle } = styles;
 
